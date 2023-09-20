@@ -1,18 +1,20 @@
 from rest_framework import serializers
-from .models import Aluno, Disciplina, Tarefa
+from .models import Student, Discipline, Task
 # Create your models here.
 
-class AlunoSerializer(serializers.ModelSerializer):
+class StudentSerializer(serializers.ModelSerializer):
   class Meta:
-    model = Aluno
+    model = Student
     fields = '__all__'
 
-class DisciplinasSerializers(serializers.ModelSerializer):
+class DisciplineSerializers(serializers.ModelSerializer):
   class Mata:
-    model = Disciplina
+    model = Discipline
     fields = '__all__'
 
-class TarefaSerializers(serializers.ModelSerializer):
+class TaskSerializers(serializers.ModelSerializer):
   class Meta:
-    model = Tarefa
+    model = Task
     fields = '__all__'    
+
+    
