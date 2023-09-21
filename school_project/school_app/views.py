@@ -4,7 +4,7 @@ from .models import Student, Discipline, Task
 from .serializers import StudentSerializer, DisciplineSerializer, TaskSerializer
 # Create your views here.
 
-class StudentListCreateView(generics.ListCreateAPIView):
+class StudentListCreatView(generics.ListCreateAPIView):
   queryset = Student.objects.all()
   serializer_class = StudentSerializer
 
