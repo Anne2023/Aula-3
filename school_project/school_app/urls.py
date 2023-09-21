@@ -11,5 +11,5 @@ urlpatternes = [
   path('task/', TaskCreatView.as_view(), name='task-list-create'),
   path('task/<int:pk>/', TaskDetailView.as_view(), name='task-detail'),
   path('admin/', admin.site.urls),
-  path('api/', include('school_app.urls')),
+  # path('api/', include('school_app.urls')),
 ]
