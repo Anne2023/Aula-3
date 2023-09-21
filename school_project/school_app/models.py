@@ -4,7 +4,7 @@ class Student(models.Model):
   name = models.CharField(max_length=100)
   email = models.EmailField(unique=True)
 
-class Discpline(models.Model):
+class Discipline(models.Model):
   name = models.CharField(max_length=100)
   description = models.TextField()
 
@@ -14,4 +14,4 @@ class Task(models.Model):
   delivery_date = models.DateField()
   completed = models.BooleanField(default=False) 
   student = models.ForeignKey(Student, on_delete=models.CASCADE)
-  discipline = models.ManyToManyField(Discpline)
+  discipline = models.ManyToManyField(Discipline)

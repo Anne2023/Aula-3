@@ -7,12 +7,12 @@ class StudentSerializer(serializers.ModelSerializer):
     model = Student
     fields = '__all__'
 
-class DisciplineSerializers(serializers.ModelSerializer):
+class DisciplineSerializer(serializers.ModelSerializer):
   class Mata:
     model = Discipline
     fields = '__all__'
 
-class TaskSerializers(serializers.ModelSerializer):
+class TaskSerializer(serializers.ModelSerializer):
   class Meta:
     model = Task
     fields = '__all__'    

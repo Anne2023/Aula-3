@@ -8,7 +8,7 @@ class StudentListCreateView(generics.ListCreateAPIView):
   queryset = Student.objects.all()
   serializer_class = StudentSerializer
 
-class StudentDetailView(generics.RetriveUpdateDestroyAPIView):
+class StudentDetailView(generics.RetrieveUpdateAPIView):
   queryset = Student.objects.all()
   serializer_class = StudentSerializer
 
@@ -16,7 +16,7 @@ class DisciplineListCreateView(generics.ListCreateAPIView):
   queryset = Discipline.objects.all()
   serializer_class = DisciplineSerializer
 
-class DisciplineDatailView(generics.RetriveUpdateDestroyAPIView):
+class DisciplineDatailView(generics.RetrieveUpdateDestroyAPIView):
   queryset = Discipline.objects.all()
   serializer_class = DisciplineSerializer
 
@@ -24,6 +24,6 @@ class TaskCreatView(generics.ListCreateAPIView):
   queryset = Task.objects.all()
   serializer_class = TaskSerializer
 
-class TaskDetailView(generics.RetriveUpdateDestroyAPIView):
+class TaskDetailView(generics.RetrieveUpdateDestroyAPIView):
   queryset = Task.objects.all()
   serializer_class = TaskSerializer
